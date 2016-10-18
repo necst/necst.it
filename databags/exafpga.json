@@ -1,43 +1,43 @@
 {
     "carousel": [
         {
-            "image": "/static/img/lines/exafpga/carousel0.jpg",
+            "image": "/static/img/topics/exafpga/carousel0.jpg",
             "caption": "Automatically and power efficiently accelerate computational kernels on reconfigurable hardware."
         },
         {
-            "image": "/static/img/lines/exafpga/carousel1.jpg",
+            "image": "/static/img/topics/exafpga/carousel1.jpg",
             "caption": "Power has become the most constraining design specification; super computing systems must also be \"super power-efficient\". exaFPGA delivers amazing power efficiency, by design."
         },
         {
-            "image": "/static/img/lines/exafpga/carousel2.jpg",
+            "image": "/static/img/topics/exafpga/carousel2.jpg",
             "caption": "We believe the most common computational kernels can be written without exotic language features. For this, we support an highly expressive subset of C."
         },
         {
-            "image": "/static/img/lines/exafpga/carousel3.jpg",
+            "image": "/static/img/topics/exafpga/carousel3.jpg",
             "caption": "We focus on algorithms that expose plenty of data-parallelism. Scalability is intrinsic to the platform from its very foundations."
         }
     ],
     "features": [
         {
-            "image": "/static/img/lines/exafpga/feature0.jpg",
+            "image": "/static/img/topics/exafpga/feature0.jpg",
             "title": "exaFPGA.",
             "subtitle": "The hardware acceleration platform for High Performance Computing.",
             "text": "The next generation of super computing platforms will deliver unprecedented performance for the benefit of all the scientific disciplines involving huge amount of computations. However, increasing performance has traditionally been accompanied by a corresponding increase in power consumption. We focus on automatic hardware acceleration of C code with an explicit focus on power/performance metric, for the next generation of supercomputing platforms."
         },
         {
-            "image": "/static/img/lines/exafpga/feature1.jpg",
+            "image": "/static/img/topics/exafpga/feature1.jpg",
             "title": "Power efficiency.",
             "subtitle": "Delivered, by design.",
             "text": "Scaling traditional supercomputing platforms is not feasible anymore due to power consumption concerns - forecasts predict that a dedicate nuclear plant might be required to operate next gen HPC clusters. In the race to power efficiency, we focus on Field Programmable Gate Arrays (FPGAs) to accelerate the \"hot\" portion of your application, in the power efficient way ingrained into FPGAs."
         },
         {
-            "image": "/static/img/lines/exafpga/feature2.jpg",
+            "image": "/static/img/topics/exafpga/feature2.jpg",
             "title": "Scalable.",
             "subtitle": "Data-parallelism oriented platform.",
             "text": "Most HPC applications involve large amounts of computations with very regular (or regularizable) memory access patterns. This implies that there is plenty of exploitable data-level parallelism which allows the application to to scale to thousands of nodes. Our approach allows to explicitly extract this parallelism from source code and distribute it among a complex FPGA-based HPC infrastructure."
         },
         {
-            "image": "/static/img/lines/exafpga/feature3.jpg",
+            "image": "/static/img/topics/exafpga/feature3.jpg",
             "title": "Easy to use.",
             "subtitle": "Programmable in plain C.",
             "text": "We believe that most computational kernels can be programmed without exotic language features. Moreover, we understand that many programmers - and in particular those in the HPC field - are not very familiar with hardware description languages (HDLs), nor with explicit description of computer architectures. That's why we designed exaFPGA to support an expressive subset of C, the language of choice of many HPC programmers."
