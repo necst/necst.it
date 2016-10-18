@@ -4,7 +4,7 @@ cache:
   directories:
     - $HOME/.cache/pip
     - $HOME/.cache/lektor/builds
-install: "pip install --no-binary pycparser && pip install git+https://github.com/singingwolfboy/lektor.git@fix-ghpages-https-deploy#egg=lektor"
+install: "pip install git+https://github.com/eliben/pycparser@release_v2.14 && pip install git+https://github.com/singingwolfboy/lektor.git@fix-ghpages-https-deploy#egg=lektor"
 script: "lektor build"
 deploy:
   provider: script
