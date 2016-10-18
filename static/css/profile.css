@@ -1,0 +1,26 @@
+.profile {
+	margin-top: 20px;
+	padding-top: 20px;
+	border-radius: 10px;
+}
+
+.social-profiles {
+	// padding-left: 15px;
+	margin-top: 20px;
+}
+
+.social-profiles a {
+	font-family: Calibri;
+	font-size: 15px;
+	color: black;
+}
+
+.social-profiles a:hover {
+	text-decoration: none;
+	color: rgb(140, 163, 112);
+}
+
+.social-profiles span:before {
+	margin-right: 10px;
+	font-size: 25px;
+}
