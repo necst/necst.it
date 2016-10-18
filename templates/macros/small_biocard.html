@@ -1,0 +1,15 @@
+{% macro render_biocard_small(data) %}
+<div class="col-md-3 col-sm-6">
+  <a href="{{ data|url }}">
+    <div class="contact-card-small">
+      <div class="user-pic">
+        <img src="{{ data.picture }}" height="75px" width="75px"/>
+      </div>
+      <div class="user-info">
+        <span class="user-name">{{ data.first_name }} {{ data.last_name }}</span>
+        <span class="user-additional">{{ data.role }}</span>
+      </div>
+    </div>
+  </a>
+</div>
+{% endmacro %}

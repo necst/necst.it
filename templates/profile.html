@@ -1,0 +1,36 @@
+{% extends "layout.html" %}
+{% from "macros/attachment.html" import render_attachment %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block additional_css %}
+<link rel="stylesheet" href="{{ '/static/css/profile.css'|url }}">
+{% endblock %}
+
+{% block body %}
+<div class="container profile">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="{{ this.picture }}"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 social-profiles">
+          {% if this.website %}<p><a href="{{ this.website }}" target="_blank"><span class="fa fa-globe"></span>Website</a></p>{% endif %}
+          {% if this.email %}<p><a href="mailto:{{ this.email }}" target="_blank"><span class="fa fa-envelope-square">E-mail</span></a></p>{% endif %}
+          {% if this.facebook %}<p><a href="{{ this.facebook }}" target="_blank"><span class="fa fa-facebook-square">Facebook</span></a></p>{% endif %}
+          {% if this.twitter %}<p><a href="{{ this.twitter }}" target="_blank"><span class="fa fa-twitter-square">Twitter</span></a></p>{% endif %}
+          {% if this.linkedin %}<p><a href="{{ this.linkedin }}" target="_blank"><span class="fa fa-linkedin-square">LinkedIn</span></a></p>{% endif %}
+          {% if this.linkedin %}<p><a href="{{ this.github }}" target="_blank"><span class="fa fa-github-square">GitHub</span></a></p>{% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <h1>{{ this.first_name }} {{ this.last_name }}</h1>
+      <h4>- {{ this.role }} -</h4>
+      <hr>
+      {{ this.bio }}
+    </div>
+  </div>
+</div>
+{% endblock %}

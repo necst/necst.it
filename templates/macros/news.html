@@ -1,0 +1,10 @@
+{% macro render_news(date, text) %}
+<div class="news">
+	<div class="news-date">
+	  {{ date }}
+	</div>
+	<div class="news-text">
+	  {{ text|safe }}
+	</div>
+</div>
+{% endmacro %}

@@ -1,0 +1,28 @@
+{
+	"news": [
+		{
+			"date": "10 aug 2016",
+			"text": "tried first event"
+		},
+		{
+			"date": "10 aug 2016",
+			"text": "tried second event"
+		},
+		{
+			"date": "10 aug 2016",
+			"text": "tried <a href='http://www.google.it'>third event</a>"
+		},
+		{
+			"date": "10 aug 2016",
+			"text": "tried fourth event"
+		},
+		{
+			"date": "10 aug 2016",
+			"text": "tried fifth event"
+		},
+		{
+			"date": "10 aug 2016",
+			"text": "tried sixth event"
+		}
+	]
+}

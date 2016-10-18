@@ -1,0 +1,22 @@
+{% macro render_biocard(data) %}
+<div class="col-md-3 col-sm-6">
+	<div class="bio-card">
+		<div class="bio-social">
+		  {% if data.facebook %}<a href="{{ data.facebook }}" target="_blank" class="fa fa-facebook"></a>{% endif %}
+		  {% if data.twitter %}<a href="{{ data.twitter }}" target="_blank" class="fa fa-twitter"></a>{% endif %}
+		  {% if data.linkedin %}<a href="{{ data.linkedin }}" target="_blank" class="fa fa-linkedin"></a>{% endif %}
+		  {% if data.website %}<a href="{{ data.website }}" target="_blank" class="fa fa-globe"></a>{% endif %}
+		  {% if data.email %}<a href="mailto:{{ data.email }}" target="_blank" class="fa fa-envelope"></a>{% endif %}
+		</div>
+		<a href="{{ data|url }}">
+			<div class="bio-pic center">
+			  <img src="{{ data.picture }}">
+			</div>
+		</a>
+		<div class="bio-info center">
+		  <div class="bio-name">{{ data.first_name }} {{ data.last_name }}</div>
+		  <div class="bio-role">- {{ data.role }} -</div>
+		</div>
+	</div>
+</div>
+{% endmacro %}

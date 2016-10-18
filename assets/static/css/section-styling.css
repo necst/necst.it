@@ -1,0 +1,18 @@
+.calendar-link a {
+	font-size: 15px;
+	float: right;
+}
+
+.additional-sections p {
+	font-size: 16px;
+}
+
+.news {
+	font-size: 15px;
+	margin-bottom: 10px;
+}
+
+.news-date {
+	font-weight: bold;
+	color: rgb(219, 222, 222);
+}

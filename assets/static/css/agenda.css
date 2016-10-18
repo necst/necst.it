@@ -1,0 +1,24 @@
+.fc-list-heading {
+	color: black;
+}
+
+.fc-list-table {
+	font-size: 10pt !important;
+}
+
+.fc-list-item:hover td {
+	background-color: rgb(60,60,60);
+}
+
+.fc-list-item.fc-has-url {
+	cursor: auto;
+}
+
+.fc-list-item.fc-has-url a {
+	cursor: default;
+	text-decoration: none;
+}
+
+.fc-event,.fc-event-dot {
+	background-color: #add971;
+}

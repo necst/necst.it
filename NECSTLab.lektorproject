@@ -1,0 +1,5 @@
+[project]
+name = NECSTLab
+
+[servers.ghpages]
+target = ghpages+https://necst/necst.it?cname=new.necst.it

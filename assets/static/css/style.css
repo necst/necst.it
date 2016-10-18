@@ -1,0 +1,241 @@
+body {
+	// background-color: rgb(196, 228, 153);
+	// background-color: rgb(50, 50, 50);
+	background-image: url('/static/img/bg.png');
+	padding-bottom: 0px !important;
+}
+
+hr {
+	border-color: black;
+}
+
+.container {
+	font-family: Calibri;
+	font-size: 20px;
+	// background-color: rgb(250,250,250);
+	background: url('/static/img/container-bg.png');
+}
+
+.container.carousel-smaller {
+	padding: 0;
+	border: 0;
+	margin-bottom: 10px;
+}
+
+.container-fluid {
+	font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+	font-size: 20px;
+	color: white;
+	// background-color: rgb(250,250,250);
+	// background: url('/static/img/container-bg.png');
+}
+
+.navbar-brand {
+	padding-top: 3px;
+	padding-bottom: 0;
+}
+
+.navbar {
+	margin-bottom: 0;
+}
+
+.navbar a {
+	font-family: Avenir Next;
+}
+
+.navbar .fa {
+	font-size: 25px;
+}
+
+.navbar-default {
+	background: url('/static/img/container-bg.png');
+	border: 0;
+}
+
+.navbar-centered {
+	text-align: center;
+}
+
+.navbar-centered .navbar-nav {
+	float: none;
+	display: inline-block;
+}
+
+.carousel .item{
+	width: 100%;
+}
+
+.vertical-align {
+  display: flex;
+  flex-direction: row;
+}
+
+.vertical-align > .featurette-image-col {
+  display: flex;
+  align-items: center;
+  justify-content: center; /* Optional, to align inner items 
+                            horizontally inside the column */
+}
+
+.featurette-image {
+	border-radius: 20px;
+}
+
+.site-intro p {
+	font-size: 18px;
+}
+
+.people-list {
+	text-align: center;
+	margin-top: 10px;
+	border-radius: 10px;
+	background-color: rgba(200,200,200);
+	// padding-top: 10px;
+	border-style: solid;
+	border-color: rgb(196, 228, 153);
+	border-width: 20px 2px 2px 2px;
+	margin-bottom: 10px;
+}
+
+// .research-lines-list .row {
+// 	padding: 15px;
+// }
+
+.people-list .page-header {
+	margin: 0;
+	color: rgb(100,100,100);
+}
+
+.calendar {
+	margin-top: 20px;
+	background-color: rgba(255,255,255,0.5);
+	padding-top: 10px;
+	text-align: center;
+}
+
+.bio-pic {
+	display: block;
+	float: left;
+}
+
+.subnav {
+	background-color: rgb(196, 228, 153) !important;
+}
+
+.subnav .navbar-nav {
+	width: 100%;
+	text-align: center;
+}
+
+.subnav .navbar-nav li {
+	float: none;
+	display: inline-block;
+	border-radius: 10px;
+}
+
+.subnav .navbar-nav li a:hover {
+	background-color: #94c058;
+}
+
+.subnav .navbar-nav li a {
+	color: rgb(50,50,50);
+	font-family: Andale Mono Regular;
+	border-radius: 10px;
+}
+
+.page-header {
+	color: #94c058;
+}
+
+ul.attachment-list li a {
+	color: rgb(105,105,105);
+	text-decoration: none;
+}
+
+ul.attachment-list li a span {
+	margin-right: 10px;
+	font-size: 40px;
+}
+
+ul.attachment-list li a:hover {
+	color: #add971;
+}
+
+ul.attachment-list {
+	list-style-type: none;
+	padding-left: 0;
+}
+
+.footer {
+	display: inline-block;
+	height: 50px;
+	background-image: url('/static/img/container-bg.png');
+	width: 100%;
+	text-align: right;
+	vertical-align: middle;
+	margin-top: 20px;
+}
+
+.research-lines-list {
+	margin-top: 20px;
+	font-size: 15px;
+	margin-bottom: 50px;
+	padding-left: 50px;
+	padding-right: 50px;
+}
+
+.research-line {
+	border-radius: 10px;
+	background-image: url('/static/img/container-bg.png');
+	padding: 5px;
+	color: rgb(30, 30, 30);
+	border-style: solid;
+	border-width: 20px 1px 10px 1px;
+	border-color: rgb(196, 228, 153);
+	text-align: justify;
+	text-justify: inter-word;
+	background-color: rgb(206, 240, 163);
+	// margin-left: 10px;
+	// margin-right: 10px;
+	margin-bottom: 20px;
+}
+
+a:hover .research-line {
+	background-image: none;
+}
+
+.research-line .img-circle {
+	height: 150px;
+	width: 150px;
+}
+
+.topics-list {
+	margin-top: 20px;
+	font-size: 15px;
+	margin-bottom: 50px;
+	// padding-left: 50px;
+	// padding-right: 50px;
+}
+
+.topic {
+	border-radius: 10px;
+	background-image: url('/static/img/container-bg.png');
+	padding: 5px;
+	color: rgb(30, 30, 30);
+	border-style: solid;
+	border-width: 10px 1px 5px 1px;
+	border-color: rgb(196, 228, 153);
+	text-align: justify;
+	text-justify: inter-word;
+	background-color: rgb(206, 240, 163);
+	margin: 5px 0px 5px 0px;
+}
+
+a:hover .topic {
+	background-image: none;
+}
+
+.topic .img-circle {
+	height: 150px;
+	width: 150px;
+}

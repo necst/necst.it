@@ -1,0 +1,108 @@
+.bio-card {
+	
+	/*-webkit-background-size: contain;
+    -moz-background-size: contain;
+    -o-background-size: contain;*/
+    /*background-size: 100% 100%;*/
+	border-style: solid;
+	border-width: 4px 0 2px 0;
+	border-color: #add971;
+	border-radius: 4px;
+	display: block;
+	position: relative;
+	height: 100%;
+	width: auto;
+	margin-bottom: 10px;
+}
+
+.bio-card:before {
+    content: ' ';
+    display: block;
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+    /*opacity: 0.4;*/
+    background-image: url('/static/img/people/biocard_bg_new.png');
+    background-repeat: no-repeat;
+    background-position: 50% 0;
+    -ms-background-size: cover;
+    -o-background-size: cover;
+    -moz-background-size: cover;
+    -webkit-background-size: cover;
+    background-size: cover;
+}
+
+.bio-social {
+	display: block;
+	position: absolute;
+	left: 10px;
+	top: 10px;
+	border-radius: 20px;
+	width: 40px;
+	background-color: rgba(250,250,250,0.7);
+	padding: 7px 5px 7px 5px;
+	z-index: 1000;
+}
+
+.bio-social a {
+	font-size: 30px;
+	color: rgb(150, 150, 150);
+}
+
+.bio-social a:hover {
+	text-decoration: none;
+	color: #add971;
+}
+
+.bio-pic {
+	display: block;
+	position: relative;
+	width: 100%;
+	margin-top: 10px;
+	margin-bottom: 10px;
+	z-index: 900;
+}
+
+.bio-pic img {
+	border-radius: 75px;
+	margin-bottom: 15px;
+}
+
+.bio-info {
+	display: block;
+	position: relative;
+	margin-bottom: 20px;
+	z-index: 100;
+}
+
+.bio-name {
+	clear: both;
+	font-family: Calibri;
+	font-size: 25px;
+	z-index: 1000;
+}
+
+.bio-name:after {
+	content:' ';
+    display:block;
+    border-style: solid;
+    border-color: #d0d0d0;
+    border-width: 1px 0 0 0;
+    /*border-radius:2px;*/
+    /*-webkit-border-radius:4px;*/
+    /*-moz-border-radius:4px;*/
+    box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -webkit-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    -moz-box-shadow:inset 0 1px 1px rgba(0, 0, 0, .05);
+    margin: 0 30px 0 30px;
+}
+
+.bio-role {
+	clear: both;
+	font-family: Calibri;
+	font-size: 15px;
+	z-index: 100;
+}

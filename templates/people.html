@@ -1,0 +1,30 @@
+{% extends "layout.html" %}
+{% from "macros/biocard.html" import render_biocard %}
+{% from "macros/small_biocard.html" import render_biocard_small %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block additional_css %}
+<link rel="stylesheet" href="{{ '/static/css/contact_card.css'|url }}">
+<link rel="stylesheet" href="{{ '/static/css/contact_card_small.css'|url }}">
+{% endblock %}
+{% block body %}
+{% macro render_biolist(name, data, small) %}
+<div class="container people-list">
+  <div class="page-header"><h1>{{ name }}</h1></div>
+  <div class="row center">
+    {% for bio in data %}
+      {% if small %}
+        {{ render_biocard_small(bio) }}
+      {% else %}
+        {{ render_biocard(bio) }}
+      {%  endif %}
+    {% endfor %}
+  </div>
+</div>
+{% endmacro %}
+{{ render_biolist('Professors', this.children.filter(F.category == 'professor'), False)}}
+{{ render_biolist('Staff', this.children.filter(F.category == 'staff'), False)}}
+{{ render_biolist('Visiting', this.children.filter(F.category == 'visiting'), False)}}
+{{ render_biolist('Ph.D. Students', this.children.filter(F.category == 'phd'), False)}}
+{{ render_biolist('Students', this.children.filter(F.category == 'student'), True)}}
+{{ render_biolist('Alumni', this.children.filter(F.category == 'alumnus'), True)}}
+{% endblock %}

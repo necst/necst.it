@@ -1,0 +1,22 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block additional_css %}
+<link rel="stylesheet" href="{{ '/static/css/featurette.css'|url }}">
+{% endblock %}
+{% block body %}
+<div class="container-fluid research-lines-list">
+  <div class="row center">
+    {% for line in this.children %}
+    <a href="{{ line|url }}">
+      <div class="col-md-4 col-sm-12">
+        <div class=" research-line">
+          <img class="img-circle" src="{{ line.logo|url }}">
+          <h2>{{ line.parent_title }}</h2>
+          <p>{{ line.parent_description }}</p>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}
