@@ -1,0 +1,28 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block additional_css %}
+<link rel="stylesheet" href="{{ '/static/css/featurette.css'|url }}">
+{% endblock %}
+{% block body %}
+<div class="container-fluid topics-list">
+  <div class="row">
+    {% for event in this.children %}
+    <a href="{{ event|url }}">
+      <div class="col-md-12">
+        <div class="topic">
+          <div class="row">
+            <div class="col-md-8">
+              <h2>{{ event.parent_title }}</h2>
+              <p>{{ event.parent_description }}</p>
+            </div>
+            <div class="col-md-4">
+              <img class="img-circle" src="{{ event.logo|url }}">
+            </div>
+          </div>
+        </div>
+      </div>
+    </a>
+    {% endfor %}
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,117 @@
+{% extends "layout.html" %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block additional_css %}
+<link rel="stylesheet" href="{{ '/static/css/featurette.css'|url }}">
+{% endblock %}
+
+{% block body %}
+
+{% set carousel_data = bag(this.title|lower).carousel %}
+{% if carousel_data|length > 0 %}
+<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+<!-- Indicators -->
+<ol class="carousel-indicators">  
+  {% for i in range(carousel_data|length) %}
+  <li data-target="#carousel-example-generic" data-slide-to="{{ i }}" {% if i == 0 %}class="active"{% endif %}></li>
+  {% endfor %}
+</ol>
+
+<!-- Wrapper for slides -->
+<div class="carousel-inner" role="listbox">
+  {% for data in carousel_data %}
+  <div class="item {% if loop.index == 1 %}active{% endif %}">
+    <img src="{{ data.image }}" alt="...">
+    <div class="carousel-caption">
+      {{ data.caption }}
+    </div>
+  </div>
+  {% endfor %}
+</div>
+</div>
+{% endif %}
+
+{% if this.show_subnav %}
+<nav class="navbar subnav">
+  <!-- here's where you put the container tag -->
+  <div class="container-fluid">
+    <div class="collapse navbar-collapse">
+      <ul class="nav navbar-nav">
+        {% if this.project_title or this.project_desc %}<li><a href="#description">About</a></li>{% endif %}
+        {% if bag(this.title|lower).features %}<li><a href="#features">Features</a></li>{% endif %}
+        {% if people %}<li><a href="#people">People</a></li>{% endif %}
+        {% if this.attachments %}<li><a href="#material">Downloads</a></li>{% endif %}
+        {% for item in bag(this.title|lower).additional_sections %}
+        <li><a href="{{item.url if item.external_url else item.url|url}}">{{ item.text }}</a></li>
+        {% endfor %}
+      </ul>
+    </div>
+  </div> <!-- close the container tag -->
+</nav>
+{% endif %}
+
+
+{% if this.project_title or this.project_desc %}
+<div class="container-fluid" id="description">
+  {% if this.project_title %}
+	<div class="page-header"><h1>{{ this.project_title }}</h1></div>
+  {% endif %}
+  {% if this.project_desc %}
+	<p>{{ this.project_desc }}</p>
+  {% endif %}
+	<hr class="featurette-divider">
+</div>
+{% endif %}
+
+{% set feature_data = bag(this.title|lower).features %}
+{% if feature_data %}
+<div class="container" id="features">
+  {% for feat in feature_data %}
+  {% if loop.index % 2 != 0 %}
+  <div class="row featurette vertical-align">
+    <div class="col col-md-6 col-md-offset-1 col-sm-7">
+      <h2 class="featurette-heading">
+        {{ feat.title }}
+        <span class="text-muted">
+          {{ feat.subtitle }}
+        </span>
+      </h2>
+      <p class="lead">
+        {{ feat.text }}
+      </p>
+    </div>
+    <div class="col col-md-4 col-sm-5 featurette-image-col">
+      <img class="featurette-image img-responsive" src="{{ feat.image|url }}"></div>
+  </div>
+  {% else %}
+  <div class="row featurette">
+    <div class="col col-md-4 col-sm-5 col-md-offset-1 featurette-image-col">
+      <img class="featurette-image img-responsive" src="{{ feat.image|url }}"></div>
+    <div class="col col-md-6 col-sm-7">
+      <h2 class="featurette-heading">
+        {{ feat.title }}
+        <span class="text-muted">{{ feat.subtitle }}</span>
+      </h2>
+      <p class="lead">
+        {{ feat.text }}
+      </p>
+    </div>
+  </div>
+  {% endif %}
+  <hr class="featurette-divider">
+  {% endfor %}
+</div>
+{% endif %}
+
+{% if this.attachments %}
+<div class="container" id="material">
+  <div class="page-header"><h1>Material</h1></div>
+    <ul class="attachment-list">
+      {% for a in this.attachments %}
+      {{ render_attachment(a) }}
+      {% endfor %}
+    </ul>
+  <hr class="featurette-divider">
+</div>
+{% endif %}
+
+{% endblock %}
