@@ -12,7 +12,7 @@ $(document).ready(function() {
         views: {
         	listFourDays: {
         		type: "list",
-        		duration: { days: 7 },
+        		duration: { days: 5 },
         		// buttonText: "4 day"
         	}
         },
