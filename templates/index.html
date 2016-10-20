@@ -9,8 +9,11 @@
 {% endblock %}
 
 {% set carousel_images = [
-    ['http://placehold.it/1800x600', 'Caption test1'],
-    ['http://placehold.it/1800x600', 'Caption test2']
+    ['/static/img/landing/DReAMS.png', ''],
+    ['/static/img/landing/ORCA.png', ''],
+    ['/static/img/landing/RIBS.png', ''],
+    ['/static/img/landing/XPH2017.png', ''],
+    ['/static/img/landing/NECST2020.png', ''],
 ] %}
 
 {% block body %}
@@ -27,10 +30,12 @@
     <div class="carousel-inner" role="listbox">
       {% for href, caption in carousel_images %}
       <div class="item {% if loop.index == 1 %}active{% endif %}">
-        <img src="{{ href }}" alt="...">
+        <img src="{{ href|url }}" alt="...">
+        {% if caption %}
         <div class="carousel-caption">
           {{ caption }}
         </div>
+        {% endif %}
       </div>
       {% endfor %}
     </div>

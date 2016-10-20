@@ -60,28 +60,7 @@
   </div>
   {% endblock %}
 
-  <!-- <header>
-    <h1>NECSTLab</h1>
-    <nav>
-      <ul class="nav navbar-nav">
-        <li{% if this._path == '/' %} class="active"{% endif
-          %}><a href="{{ '/'|url }}">Welcome</a></li>
-        {% for href, title in [
-          ['/projects', 'Projects'],
-          ['/about', 'About']
-        ] %}
-          <li{% if this.is_child_of(href) %} class="active"{% endif
-            %}><a href="{{ href|url }}">{{ title }}</a></li>
-        {% endfor %}
-      </ul>
-    </nav>
-  </header>
-  <div class="page">
-  </div>
-  <footer>
-    &copy; Copyright 2016 by Alessandro Frossi.
-  </footer> -->
-  <script src="http://code.jquery.com/jquery-1.12.4.min.js"></script>
+  <script src="{{ '/static/js/jquery-1.12.4.min.js'|url }}"></script>
   <script src="{{ '/static/js/bootstrap.min.js'|url }}"></script>
   {% block additional_js %}
   {% endblock %}

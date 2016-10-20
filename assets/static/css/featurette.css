@@ -55,6 +55,14 @@ body {
   height: 500px;
 }
 
+.carousel-smaller .item {
+  height: 700px;
+}
+
+.carousel-smaller img {
+  height: 700px !important;
+}
+
 img {
   display: block;
   margin: auto;
