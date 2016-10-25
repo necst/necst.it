@@ -1,0 +1,49 @@
+{
+	"carousel": [
+		{
+			"image": "/static/img/landing/DReAMS.png",
+			"title": "title",
+			"subtitle": "subtitle",
+			"caption": "caption",
+			"link": "http://google.it",
+			"link_name": "Button Text",
+			"external_link": true
+		},
+		{
+			"image": "/static/img/landing/ORCA.png",
+			"title": "title",
+			"subtitle": "subtitle",
+			"caption": "caption",
+			"link": "http://google.it",
+			"link_name": "Button Text",
+			"external_link": true
+		},
+		{
+			"image": "/static/img/landing/RIBS.png",
+			"title": "title",
+			"subtitle": "subtitle",
+			"caption": "caption",
+			"link": "http://google.it",
+			"link_name": "Button Text",
+			"external_link": true
+		},
+		{
+			"image": "/static/img/landing/XPH2017.png",
+			"title": "title",
+			"subtitle": "subtitle",
+			"caption": "caption",
+			"link": "http://google.it",
+			"link_name": "Button Text",
+			"external_link": true
+		},
+		{
+			"image": "/static/img/landing/NECST2020.png",
+			"title": "title",
+			"subtitle": "subtitle",
+			"caption": "caption",
+			"link": "http://google.it",
+			"link_name": "Button Text",
+			"external_link": true
+		}
+	]
+}
