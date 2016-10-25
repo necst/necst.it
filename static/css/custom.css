@@ -1,0 +1,12 @@
+/****** PLACE YOUR CUSTOM STYLES HERE ******/
+img.logo {
+	max-height: 80%;
+}
+
+.nav-bar.nav-bar-center {
+	text-align: center;
+}
+
+footer > p.text-right {
+	margin-right: 20px;
+}

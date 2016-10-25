@@ -2,228 +2,299 @@
 <html>
 <head>
 <meta charset="utf-8">
-<link rel="stylesheet" href="../../static/css/bootstrap.min.css">
-<link rel="stylesheet" href="../../static/css/bootstrap-theme.min.css">
-<link rel="stylesheet" href="../../static/css/style.css">
+<link href="../../static/css/themify-icons.css"" rel="stylesheet" type="text/css" media="all" />
+<link href="../../static/css/bootstrap.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../static/css/flexslider.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../static/css/lightbox.min.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../static/css/ytplayer.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../static/css/theme.css" rel="stylesheet" type="text/css" media="all" />
+<link href="../../static/css/custom.css" rel="stylesheet" type="text/css" media="all" />
+<link href='http://fonts.googleapis.com/css?family=Lato:300,400%7CRaleway:100,400,300,500,600,700%7COpen+Sans:400,500,600' rel='stylesheet' type='text/css'>
 <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css" rel="stylesheet">
 
-<link rel="stylesheet" href="../../static/css/featurette.css">
+<!-- <link rel="stylesheet" href="../../static/css/featurette.css"> -->
 <link rel="stylesheet" href="../../static/css/contact_card_small.css">
 
 <title>exaFPGA — NECSTLab</title>
 </head>
 <body>
-  <nav class="navbar navbar-default">
-    <div class="container">
-      <!-- Brand and toggle get grouped for better mobile display -->
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="/">
-          <img alt="NECSTLab Logo" src="../../static/img/logonew.png" width=100></img>
-          <!-- <img alt="NECSTLab Logo" src="http://placehold.it/150x75?text=logo"></img> -->
+
+<div class="nav-container">
+  <nav>
+    <div class="nav-bar">
+      <div class="module left">
+        <a href="index.html">
+          <img class="logo logo-light" alt="Foundry" src="../../static/img/logo-light.png">
+          <div class="vnu"><img class="logo" alt="Foundry" src="../../static/img/logonew.png"></div>
         </a>
       </div>
+      <div class="module widget-handle mobile-toggle right visible-sm visible-xs">
+        <i class="ti-menu"></i>
+      </div>
+      <div class="module-group right">
+        <div class="module left">
+          <ul class="menu">
+            <li><a href="/">Home</a></li>
+            <li class="has-dropdown">
+              <a href="/lines">Research Lines</a>
+              <ul>
+                
+                <li><a href="../../lines/dreams/">DReAMS</a></li>
+                
+                <li><a href="../../lines/orca/">ORCA</a></li>
+                
+                <li><a href="../../lines/ribs/">RIBs</a></li>
+                
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="/topics">Topics</a>
+              <ul>
+                
+                <li><a href="../../topics/a4ds/">A4DS</a></li>
+                
+                <li><a href="../../topics/asap/">ASAP</a></li>
+                
+                <li><a href="../../topics/biomedinitiative/">BIOMEDIniative</a></li>
+                
+                <li><a href="../../topics/boss/">BOSS</a></li>
+                
+                <li><a href="../../topics/change/">CHANGE</a></li>
+                
+                <li><a href="../../topics/epic/">EPiC</a></li>
+                
+                <li><a href="../../topics/exafpga/">exaFPGA</a></li>
+                
+                <li><a href="../../topics/hug/">HUGenomics</a></li>
+                
+                <li><a href="../../topics/marc/">MARC</a></li>
+                
+                <li><a href="../../topics/morphone/">morphone</a></li>
+                
+                <li><a href="../../topics/spin/">Spin</a></li>
+                
+                <li><a href="../../topics/sympa/">SyMPA</a></li>
+                
+                <li><a href="../../topics/taco/">TACO</a></li>
+                
+                <li><a href="../../topics/zen0/">Zen0</a></li>
+                
+              </ul>
+            </li>
+            <li class="has-dropdown">
+              <a href="/events">Events</a>
+              <ul>
+                
+                <li><a href="../../events/hackathons/">PYNQ Hackathon</a></li>
+                
+                <li><a href="../../events/ngc/">NECST Group Conference (NGC)</a></li>
+                
+                <li><a href="../../events/nsw/">NECST Summer Workshop (NSW)</a></li>
+                
+              </ul>
+            </li>
+            <li><a href="/people">People</a></li>
+            <li><a href="/calendar">Calendar</a></li>
+            <li><a href="http://guide.necst.it/en/latest/#_=_" target="_blank">Guide</a></li>
+            <li><a href="https://www.facebook.com/groups/52052425507/" target="_blank"><span class="fa fa-facebook-square"> Facebook</span></a></li>
+            <li><a href="http://www.twitter.com/necstlaboratory" target="_blank"><span class="fa fa-twitter-square"> Twitter</span></a></li>
+          </ul>
+        </div>
+      </div>
 
-      
-
-      <!-- Collect the nav links, forms, and other content for toggling -->
-      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-        <ul class="nav navbar-nav">
-          
-          <li><a href="../../lines/">Research Lines</a></li>
-          
-          <li><a href="../../topics/">Topics</a></li>
-          
-          <li><a href="../../events/">Events</a></li>
-          
-          <li><a href="../../people/">People</a></li>
-          
-          <li><a href="../../calendar/">Calendar</a></li>
-          
-          <li><a href="http://guide.necst.it/en/latest/#_=_">Guide</a></li>
-          
-        </ul>
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="https://www.facebook.com/groups/52052425507/"><i class="fa fa-facebook-square"></i></a></li>
-          <li><a href="http://www.twitter.com/necstlaboratory"><i class="fa fa-twitter-square"></i></a></li>
-        </ul>
-      </div><!-- /.navbar-collapse -->
-    </div><!-- /.container-fluid -->
-  </nav>
-
-  
-
-
-
-
-<div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-<!-- Indicators -->
-<ol class="carousel-indicators">  
-  
-  <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-  
-  <li data-target="#carousel-example-generic" data-slide-to="1" ></li>
-  
-  <li data-target="#carousel-example-generic" data-slide-to="2" ></li>
-  
-  <li data-target="#carousel-example-generic" data-slide-to="3" ></li>
-  
-</ol>
-
-<!-- Wrapper for slides -->
-<div class="carousel-inner" role="listbox">
-  
-  <div class="item active">
-    <img src="/static/img/topics/exafpga/carousel0.jpg" alt="...">
-    <div class="carousel-caption">
-      Automatically and power efficiently accelerate computational kernels on reconfigurable hardware.
     </div>
-  </div>
-  
-  <div class="item ">
-    <img src="/static/img/topics/exafpga/carousel1.jpg" alt="...">
-    <div class="carousel-caption">
-      Power has become the most constraining design specification; super computing systems must also be &#34;super power-efficient&#34;. exaFPGA delivers amazing power efficiency, by design.
-    </div>
-  </div>
-  
-  <div class="item ">
-    <img src="/static/img/topics/exafpga/carousel2.jpg" alt="...">
-    <div class="carousel-caption">
-      We believe the most common computational kernels can be written without exotic language features. For this, we support an highly expressive subset of C.
-    </div>
-  </div>
-  
-  <div class="item ">
-    <img src="/static/img/topics/exafpga/carousel3.jpg" alt="...">
-    <div class="carousel-caption">
-      We focus on algorithms that expose plenty of data-parallelism. Scalability is intrinsic to the platform from its very foundations.
-    </div>
-  </div>
-  
-</div>
+  </nav>    
 </div>
 
+  
 
 
-<nav class="navbar subnav">
-  <!-- here's where you put the container tag -->
-  <div class="container-fluid">
-    <div class="collapse navbar-collapse">
-      <ul class="nav navbar-nav">
-        
-        <li><a href="#features">Features</a></li>
-        
-        
-        
-        <li><a href="http://www.google.com">Test</a></li>
-        
-      </ul>
-    </div>
-  </div> <!-- close the container tag -->
-</nav>
-
-
-
-
-
-
-<div class="container" id="features">
+<div class="main-container">
   
   
-  <div class="row featurette vertical-align">
-    <div class="col col-md-6 col-md-offset-1 col-sm-7">
-      <h2 class="featurette-heading">
-        exaFPGA.
-        <span class="text-muted">
-          The hardware acceleration platform for High Performance Computing.
-        </span>
-      </h2>
-      <p class="lead">
-        The next generation of super computing platforms will deliver unprecedented performance for the benefit of all the scientific disciplines involving huge amount of computations. However, increasing performance has traditionally been accompanied by a corresponding increase in power consumption. We focus on automatic hardware acceleration of C code with an explicit focus on power/performance metric, for the next generation of supercomputing platforms.
-      </p>
-    </div>
-    <div class="col col-md-4 col-sm-5 featurette-image-col">
-      <img class="featurette-image img-responsive" src="../../static/img/topics/exafpga/feature0.jpg"></div>
+  <section class="cover fullscreen image-slider slider-all-controls controls-inside parallax">
+    <ul class="slides">
+        
+        <li class="overlay image-bg">
+            <div class="background-image-holder">
+                <img alt="image" class="background-image" src="../../static/img/topics/exafpga/carousel0.jpg">
+            </div>
+            
+            <div class="container v-align-transform">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8">
+                        <h1 class="mb40 mb-xs-16 large">Title</h1>
+                        <p class="lead mb40">Automatically and power efficiently accelerate computational kernels on reconfigurable hardware.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </li>
+        
+        <li class="overlay image-bg">
+            <div class="background-image-holder">
+                <img alt="image" class="background-image" src="../../static/img/topics/exafpga/carousel1.jpg">
+            </div>
+            
+            <div class="container v-align-transform">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8">
+                        <h1 class="mb40 mb-xs-16 large">Title!</h1>
+                        <p class="lead mb40">Power has become the most constraining design specification; super computing systems must also be &#34;super power-efficient&#34;. exaFPGA delivers amazing power efficiency, by design.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </li>
+        
+        <li class="overlay image-bg">
+            <div class="background-image-holder">
+                <img alt="image" class="background-image" src="../../static/img/topics/exafpga/carousel2.jpg">
+            </div>
+            
+            <div class="container v-align-transform">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8">
+                        <h1 class="mb40 mb-xs-16 large">Title!!</h1>
+                        <p class="lead mb40">We believe the most common computational kernels can be written without exotic language features. For this, we support an highly expressive subset of C.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </li>
+        
+        <li class="overlay image-bg">
+            <div class="background-image-holder">
+                <img alt="image" class="background-image" src="../../static/img/topics/exafpga/carousel3.jpg">
+            </div>
+            
+            <div class="container v-align-transform">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8">
+                        <h1 class="mb40 mb-xs-16 large">Title?</h1>
+                        <p class="lead mb40">We focus on algorithms that expose plenty of data-parallelism. Scalability is intrinsic to the platform from its very foundations.</p>
+                    </div>
+                </div>
+            </div>
+            
+        </li>
+        
+    </ul>
+  </section>
+  
+
+  
+  <div class="nav-container">
+    <nav>
+      <div class="nav-bar nav-bar-center">
+        <div class="module">
+          <ul class="menu">
+            
+            <li><a href="#features">Features</a></li>
+            
+            
+            
+            <li><a href="http://www.google.com">Test</a></li>
+            
+          </ul>
+        </div>
+      </div>
+    </nav>
   </div>
   
-  <hr class="featurette-divider">
+
+  
+
   
   
-  <div class="row featurette">
-    <div class="col col-md-4 col-sm-5 col-md-offset-1 featurette-image-col">
-      <img class="featurette-image img-responsive" src="../../static/img/topics/exafpga/feature1.jpg"></div>
-    <div class="col col-md-6 col-sm-7">
-      <h2 class="featurette-heading">
-        Power efficiency.
-        <span class="text-muted">Delivered, by design.</span>
-      </h2>
-      <p class="lead">
-        Scaling traditional supercomputing platforms is not feasible anymore due to power consumption concerns - forecasts predict that a dedicate nuclear plant might be required to operate next gen HPC clusters. In the race to power efficiency, we focus on Field Programmable Gate Arrays (FPGAs) to accelerate the &#34;hot&#34; portion of your application, in the power efficient way ingrained into FPGAs.
-      </p>
-    </div>
-  </div>
+    
+    
+    <section class="image-square right">
+        <div class="col-md-6 image">
+            <div class="background-image-holder">
+                <img alt="image" class="background-image" src="../../static/img/topics/exafpga/feature0.jpg">
+            </div>
+        </div>
+        <div class="col-md-6 content">
+            <h2>exaFPGA.</h2>
+            <h3>The hardware acceleration platform for High Performance Computing.</h3>
+            <p class="mb0">The next generation of super computing platforms will deliver unprecedented performance for the benefit of all the scientific disciplines involving huge amount of computations. However, increasing performance has traditionally been accompanied by a corresponding increase in power consumption. We focus on automatic hardware acceleration of C code with an explicit focus on power/performance metric, for the next generation of supercomputing platforms.</p>
+        </div>
+    </section>
+    
+    
+    
+    <section class="image-square left">
+        <div class="col-md-6 image">
+            <div class="background-image-holder">
+                <img alt="image" class="background-image" src="../../static/img/topics/exafpga/feature1.jpg">
+            </div>
+        </div>
+        <div class="col-md-6 col-md-offset-1 content">
+            <h2>Power efficiency.</h2>
+            <h3>Delivered, by design.</h3>
+            <p class="mb0">Scaling traditional supercomputing platforms is not feasible anymore due to power consumption concerns - forecasts predict that a dedicate nuclear plant might be required to operate next gen HPC clusters. In the race to power efficiency, we focus on Field Programmable Gate Arrays (FPGAs) to accelerate the &#34;hot&#34; portion of your application, in the power efficient way ingrained into FPGAs.</p>
+        </div>
+    </section>
+    
+    
+    
+    <section class="image-square right">
+        <div class="col-md-6 image">
+            <div class="background-image-holder">
+                <img alt="image" class="background-image" src="../../static/img/topics/exafpga/feature2.jpg">
+            </div>
+        </div>
+        <div class="col-md-6 content">
+            <h2>Scalable.</h2>
+            <h3>Data-parallelism oriented platform.</h3>
+            <p class="mb0">Most HPC applications involve large amounts of computations with very regular (or regularizable) memory access patterns. This implies that there is plenty of exploitable data-level parallelism which allows the application to to scale to thousands of nodes. Our approach allows to explicitly extract this parallelism from source code and distribute it among a complex FPGA-based HPC infrastructure.</p>
+        </div>
+    </section>
+    
+    
+    
+    <section class="image-square left">
+        <div class="col-md-6 image">
+            <div class="background-image-holder">
+                <img alt="image" class="background-image" src="../../static/img/topics/exafpga/feature3.jpg">
+            </div>
+        </div>
+        <div class="col-md-6 col-md-offset-1 content">
+            <h2>Easy to use.</h2>
+            <h3>Programmable in plain C.</h3>
+            <p class="mb0">We believe that most computational kernels can be programmed without exotic language features. Moreover, we understand that many programmers - and in particular those in the HPC field - are not very familiar with hardware description languages (HDLs), nor with explicit description of computer architectures. That&#39;s why we designed exaFPGA to support an expressive subset of C, the language of choice of many HPC programmers.</p>
+        </div>
+    </section>
+    
+    
   
-  <hr class="featurette-divider">
+
   
-  
-  <div class="row featurette vertical-align">
-    <div class="col col-md-6 col-md-offset-1 col-sm-7">
-      <h2 class="featurette-heading">
-        Scalable.
-        <span class="text-muted">
-          Data-parallelism oriented platform.
-        </span>
-      </h2>
-      <p class="lead">
-        Most HPC applications involve large amounts of computations with very regular (or regularizable) memory access patterns. This implies that there is plenty of exploitable data-level parallelism which allows the application to to scale to thousands of nodes. Our approach allows to explicitly extract this parallelism from source code and distribute it among a complex FPGA-based HPC infrastructure.
-      </p>
-    </div>
-    <div class="col col-md-4 col-sm-5 featurette-image-col">
-      <img class="featurette-image img-responsive" src="../../static/img/topics/exafpga/feature2.jpg"></div>
-  </div>
-  
-  <hr class="featurette-divider">
-  
-  
-  <div class="row featurette">
-    <div class="col col-md-4 col-sm-5 col-md-offset-1 featurette-image-col">
-      <img class="featurette-image img-responsive" src="../../static/img/topics/exafpga/feature3.jpg"></div>
-    <div class="col col-md-6 col-sm-7">
-      <h2 class="featurette-heading">
-        Easy to use.
-        <span class="text-muted">Programmable in plain C.</span>
-      </h2>
-      <p class="lead">
-        We believe that most computational kernels can be programmed without exotic language features. Moreover, we understand that many programmers - and in particular those in the HPC field - are not very familiar with hardware description languages (HDLs), nor with explicit description of computer architectures. That&#39;s why we designed exaFPGA to support an expressive subset of C, the language of choice of many HPC programmers.
-      </p>
-    </div>
-  </div>
-  
-  <hr class="featurette-divider">
+
   
 </div>
 
 
-
-
-
-
-
   
   
-  <div class="footer pull-right">
-    &copy; Copyright 2016 by NECSTLab
-  </div>
+  <footer>
+    <p class="text-right">&copy; Copyright 2016 by NECSTLab</p>
+  </footer>
   
 
   <script src="../../static/js/jquery-1.12.4.min.js"></script>
   <script src="../../static/js/bootstrap.min.js"></script>
+  <script src="../../static/js/flexslider.min.js"></script>
+  <script src="../../static/js/lightbox.min.js"></script>
+  <script src="../../static/js/masonry.min.js"></script>
+  <script src="../../static/js/twitterfetcher.min.js"></script>
+  <script src="../../static/js/spectragram.min.js"></script>
+  <script src="../../static/js/ytplayer.min.js"></script>
+  <script src="../../static/js/countdown.min.js"></script>
+  <script src="../../static/js/smooth-scroll.min.js"></script>
+  <script src="../../static/js/parallax.js"></script>
+  <script src="../../static/js/scripts.js"></script>
   
   
 </body>
