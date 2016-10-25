@@ -8,8 +8,8 @@
 {% endblock %}
 {% block body %}
 {% macro render_biolist(name, data, small) %}
-<div class="container people-list">
-  <div class="page-header"><h1>{{ name }}</h1></div>
+<div class="container people-list {{ 'people-list-small' if small }}">
+  <div class="page-header"><h2>{{ name }}</h2></div>
   <div class="row center">
     {% for bio in data %}
       {% if small %}
@@ -21,10 +21,12 @@
   </div>
 </div>
 {% endmacro %}
+<div class="main-container">
 {{ render_biolist('Professors', this.children.filter(F.category == 'professor'), False)}}
-{{ render_biolist('Staff', this.children.filter(F.category == 'staff'), False)}}
+{{ render_biolist('Staff', this.children.filter(F.category == 'staff'), True)}}
 {{ render_biolist('Visiting', this.children.filter(F.category == 'visiting'), False)}}
 {{ render_biolist('Ph.D. Students', this.children.filter(F.category == 'phd'), False)}}
 {{ render_biolist('Students', this.children.filter(F.category == 'student'), True)}}
 {{ render_biolist('Alumni', this.children.filter(F.category == 'alumnus'), True)}}
+</div>
 {% endblock %}

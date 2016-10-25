@@ -1,10 +1,10 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block additional_css %}
-<link rel="stylesheet" href="{{ '/static/css/featurette.css'|url }}">
+<!-- <link rel="stylesheet" href="{{ '/static/css/featurette.css'|url }}"> -->
 {% endblock %}
 {% block body %}
-<div class="container topics-list">
+<div class="main-container topics-list">
   <div class="row">
     {% for topic in this.children %}
     <a href="{{ topic|url }}">

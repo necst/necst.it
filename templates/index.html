@@ -2,76 +2,79 @@
 {% from "macros/news.html" import render_news %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block additional_css %}
-<link rel="stylesheet" href="{{ '/static/css/featurette.css'|url }}">
+<!-- <link rel="stylesheet" href="{{ '/static/css/featurette.css'|url }}">
 <link rel="stylesheet" href="{{ '/static/css/section-styling.css'|url }}">
 <link rel="stylesheet" href="{{ '/static/css/fullcalendar.css'|url }}">
-<link rel="stylesheet" href="{{ '/static/css/agenda.css'|url }}">
+<link rel="stylesheet" href="{{ '/static/css/agenda.css'|url }}"> -->
 {% endblock %}
+</head>
+<body>
 
-{% set carousel_images = [
-    ['/static/img/landing/DReAMS.png', ''],
-    ['/static/img/landing/ORCA.png', ''],
-    ['/static/img/landing/RIBS.png', ''],
-    ['/static/img/landing/XPH2017.png', ''],
-    ['/static/img/landing/NECST2020.png', ''],
-] %}
-
-{% block body %}
-<div class="container carousel-smaller">
-  <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
-    <!-- Indicators -->
-    <ol class="carousel-indicators">  
-      {% for i in range(carousel_images|length) %}
-      <li data-target="#carousel-example-generic" data-slide-to="{{ i }}" {% if i == 0 %}class="active"{% endif %}></li>
-      {% endfor %}
-    </ol>
-
-    <!-- Wrapper for slides -->
-    <div class="carousel-inner" role="listbox">
-      {% for href, caption in carousel_images %}
-      <div class="item {% if loop.index == 1 %}active{% endif %}">
-        <img src="{{ href|url }}" alt="...">
-        {% if caption %}
-        <div class="carousel-caption">
-          {{ caption }}
-        </div>
-        {% endif %}
+{% block body %}    
+<div class="main-container">
+  <section class="cover fullscreen image-slider slider-all-controls controls-inside parallax">
+    <ul class="slides">
+        {% for item in bag('landing_carousel').carousel %}
+        <li class="overlay image-bg">
+            <div class="background-image-holder">
+                <img alt="image" class="background-image" src="{{ item.image|url }}">
+            </div>
+            {% if item.caption or item.title or item.subtitle or item.link %}
+            <div class="container v-align-transform">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8">
+                        {% if item.title %}<h1 class="mb40 mb-xs-16 large">{{ item.title }}</h1>{% endif %}
+                        {% if item.subtitle %}<h6 class="uppercase mb16">{{ item.subtitle }}</h6>{% endif %}
+                        {% if item.caption %}<p class="lead mb40">{{ item.caption }}</p>{% endif %}
+                        {% if item.link %}<a class="btn btn-lg" href="{{ item.link if item.external_link else item.link|url }}">{{ item.link_name }}</a>{% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+  </section>
+  <section>
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-10 col-sm-offset-1 text-center">
+                  <h3 class="uppercase color-primary mb40 mb-xs-24">NECSTLab</h3>
+                  <p class="lead">
+                     The NECST Lab (Novel, Emerging Computing System Technologies Laboratory) comprises a number of different research lines on advanced topics in computing systems, ranging from architectural characteristics, to hardware-software codesign methodologies, to security and dependability issues of complex system architectures (scaling from mobile devices to large virtualized datacenters). Furthermore, the laboratory pursues its “historical” tradition of research in the definition of methodologies and techniques regarding testability, auto-diagnosis and fault tolerance both for hardware architectures and hardware-software systems.
+                  </p>
+              </div>
+          </div>
+          
       </div>
-      {% endfor %}
-    </div>
-    </div>
-</div>
-
-<div class="container-fluid site-intro">
-	<div class="page-header"><h1>About NECSTLab</h1></div>
-	<p>The NECST Lab (Novel, Emerging Computing System Technologies Laboratory) comprises a number of different research lines on advanced topics in computing systems, ranging from architectural characteristics, to hardware-software codesign methodologies, to security and dependability issues of complex system architectures (scaling from mobile devices to large virtualized datacenters). Furthermore, the laboratory pursues its “historical” tradition of research in the definition of methodologies and techniques regarding testability, auto-diagnosis and fault tolerance both for hardware architectures and hardware-software systems.</p>
-	<!-- <hr class="featurette-divider"> -->
-</div>
-
-<div class="container-fluid additional-sections">
-  <div class="row">
-    <div class="col-md-4 col-sm-12">
-      <div class="page-header"><h2>NEWS</h2></div>
-      {% for news in bag('news').news %}
-      {% if loop.index <= 5 %}
-        {{ render_news(news.date, news.text) }}
-      {% endif %}
-      {% endfor %}
-    </div>
-    <div class="col-md-4 col-sm-12">
-      <div class="page-header"><h2>RESEARCH</h2></div>
-      <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Modi est, nobis obcaecati corrupti adipisci voluptas quae sint eligendi quo qui iusto optio. Tenetur ut nostrum ipsa natus accusantium et fugit.</p>
-    </div>
-    <div class="col-md-4 col-sm-12">
-      <div class="page-header"><h2>UPCOMING EVENTS</h2></div>
-      <div class="calendar-container" id="agenda">
-        <!-- <iframe src="https://calendar.google.com/calendar/embed?showTitle=0&amp;showNav=0&amp;showDate=0&amp;showPrint=0&amp;showTabs=0&amp;showCalendars=0&amp;showTz=0&amp;mode=AGENDA&amp;height=200&amp;wkst=2&amp;bgcolor=%23ffffff&amp;src=ir995hjijtv88ktfcfaf0s12gk%40group.calendar.google.com&amp;color=%238D6F47&amp;ctz=Europe%2FRome" style="border:solid 1px #777" width="400" height="200" frameborder="0" scrolling="no"></iframe> -->
+      
+  </section><section class="bg-dark">
+      <div class="container">
+          <div class="row">
+              <div class="col-sm-4">
+                  <h2 class="number">NEWS</h2>
+                  {% for news in bag('news').news %}
+                  {% if loop.index <= 5 %}
+                    {{ render_news(news.date, news.text) }}
+                  {% endif %}
+                  {% endfor %}
+              </div>
+              <div class="col-sm-4">
+                  <h2 class="number">RESEARCH</h2>
+                  <p>
+                      At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident.
+                  </p>
+              </div>
+              <div class="col-sm-4">
+                  <h2>UPCOMING EVENTS</h2>
+                  <div class="calendar-container" id="agenda"></div>
+                  <p class="calendar-link"><a href="{{ site.get('calendar')|url }}">See full calendar</a></p>
+              </div>
+          </div>
+          
       </div>
-      <p class="calendar-link"><a href="{{ site.get('calendar')|url }}">See full calendar</a></p>
-    </div>
-  </div>
-</div>
-
+      
+  </section>
 </div>
 {% endblock %}
 
@@ -81,3 +84,4 @@
 <script src="{{ '/static/js/gcal.js'|url }}"></script>
 <script src="{{ '/static/js/agenda_init.js'|url }}"></script>
 {% endblock %}
+</body></html>

@@ -9,11 +9,11 @@
 		  {% if data.email %}<a href="mailto:{{ data.email }}" target="_blank" class="fa fa-envelope"></a>{% endif %}
 		</div>
 		<a href="{{ data|url }}">
-			<div class="bio-pic center">
+			<div class="bio-pic text-center">
 			  <img src="{{ data.picture }}">
 			</div>
 		</a>
-		<div class="bio-info center">
+		<div class="bio-info text-center">
 		  <div class="bio-name">{{ data.first_name }} {{ data.last_name }}</div>
 		  <div class="bio-role">- {{ data.role }} -</div>
 		</div>
