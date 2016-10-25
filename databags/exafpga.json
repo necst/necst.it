@@ -2,18 +2,22 @@
     "carousel": [
         {
             "image": "/static/img/topics/exafpga/carousel0.jpg",
+            "title": "Title",
             "caption": "Automatically and power efficiently accelerate computational kernels on reconfigurable hardware."
         },
         {
             "image": "/static/img/topics/exafpga/carousel1.jpg",
+            "title": "Title!",
             "caption": "Power has become the most constraining design specification; super computing systems must also be \"super power-efficient\". exaFPGA delivers amazing power efficiency, by design."
         },
         {
             "image": "/static/img/topics/exafpga/carousel2.jpg",
+            "title": "Title!!",
             "caption": "We believe the most common computational kernels can be written without exotic language features. For this, we support an highly expressive subset of C."
         },
         {
             "image": "/static/img/topics/exafpga/carousel3.jpg",
+            "title": "Title?",
             "caption": "We focus on algorithms that expose plenty of data-parallelism. Scalability is intrinsic to the platform from its very foundations."
         }
     ],
