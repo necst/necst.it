@@ -3,13 +3,7 @@ title: DReAMS
 parent_title: DReAMS
 ---
 parent_description:
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**DReAMS** is a research line that sees the FPGA at the center of all the work/research designed and developed: e.g. IP design, reconfigurable systems, prototyping architectures, acceleration algorithms. FPGAs are not necessarily the actual direct object of the work done, e.g., systems design and prototyping, but they based the rationale behind them, e.g. CAD tools, place and route algorithms, flow planning.
 ---
 logo: /static/img/lines/dreams/logo.png
 ---
