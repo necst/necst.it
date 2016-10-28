@@ -1,21 +1,23 @@
 {% extends "layout.html" %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block additional_css %}
-<!-- <link rel="stylesheet" href="{{ '/static/css/featurette.css'|url }}"> -->
+<link rel="stylesheet" href="{{ '/static/css/research-lines.css'|url }}">
 {% endblock %}
 {% block body %}
 <div class="main-container research-lines-list">
-  <div class="row center">
+  <div class="row row-eq-height center">
     {% for line in this.children %}
-    <a href="{{ line|url }}">
-      <div class="col-md-4 col-sm-12">
-        <div class=" research-line">
-          <img class="img-circle" src="{{ line.logo|url }}">
+    <div class="col-md-4 col-sm-12">
+      <a href="{{ line|url }}">
+        <div class="research-line">
+          <div class="img-holder">
+            <img class="img-circle" src="{{ line.logo|url }}">
+          </div>
           <h2>{{ line.parent_title }}</h2>
           <p>{{ line.parent_description }}</p>
         </div>
-      </div>
-    </a>
+      </a>
+    </div>
     {% endfor %}
   </div>
 </div>

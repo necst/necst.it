@@ -14,7 +14,7 @@
 <div class="main-container">
   {% set carousel_data = bag(this.title|lower).carousel %}
   {% if carousel_data|length > 0 %}
-  <section class="cover fullscreen image-slider slider-all-controls controls-inside parallax">
+  <section class="cover image-slider slider-all-controls controls-inside parallax landing-slider">
     <ul class="slides">
         {% for data in carousel_data %}
         <li class="overlay image-bg">
