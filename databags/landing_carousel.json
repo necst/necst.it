@@ -1,48 +1,39 @@
 {
 	"carousel": [
 		{
-			"image": "/static/img/landing/DReAMS.png",
-			"title": "title",
-			"subtitle": "subtitle",
-			"caption": "caption",
-			"link": "http://google.it",
-			"link_name": "Button Text",
-			"external_link": true
+			"image": "/static/img/landing/DReAMS2.jpg",
+			"title": "DReAMS",
+			"subtitle": "NECST Research Line focusing on Reconfigurable Computing",
+			"caption": "",
+			"link": "/lines/dreams",
+			"link_name": "Details",
+			"external_link": false
 		},
 		{
-			"image": "/static/img/landing/ORCA.png",
-			"title": "title",
-			"subtitle": "subtitle",
-			"caption": "caption",
-			"link": "http://google.it",
-			"link_name": "Button Text",
-			"external_link": true
+			"image": "/static/img/landing/ORCA.jpg",
+			"title": "ORCA",
+			"subtitle": "Observe, Runtime & Computer Architecture",
+			"caption": "",
+			"link": "/lines/orca",
+			"link_name": "Details",
+			"external_link": false
 		},
 		{
-			"image": "/static/img/landing/RIBS.png",
-			"title": "title",
-			"subtitle": "subtitle",
-			"caption": "caption",
-			"link": "http://google.it",
-			"link_name": "Button Text",
-			"external_link": true
+			"image": "/static/img/landing/RIBS2.jpg",
+			"title": "RIBs",
+			"subtitle": "Real Interactive Building Experiences",
+			"caption": "",
+			"link": "/lines/ribs",
+			"link_name": "Details",
+			"external_link": false
 		},
 		{
-			"image": "/static/img/landing/XPH2017.png",
-			"title": "title",
-			"subtitle": "subtitle",
-			"caption": "caption",
-			"link": "http://google.it",
-			"link_name": "Button Text",
-			"external_link": true
-		},
-		{
-			"image": "/static/img/landing/NECST2020.png",
-			"title": "title",
-			"subtitle": "subtitle",
-			"caption": "caption",
-			"link": "http://google.it",
-			"link_name": "Button Text",
+			"image": "/static/img/landing/XPH2.jpg",
+			"title": "#XPH2017",
+			"subtitle": "Xilinx PYNQ Hackathon",
+			"caption": "",
+			"link": "http://xph.necst.it",
+			"link_name": "More info",
 			"external_link": true
 		}
 	]

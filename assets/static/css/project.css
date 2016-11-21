@@ -1,0 +1,25 @@
+.project-social {
+	margin-top: 0px;
+	margin-bottom: 0px;
+	padding-top: 0px;
+	padding-bottom: 0px;
+}
+
+.project-social > a {
+	color: black;
+	font-size: 30px;
+	margin-left: 5px;
+	margin-right: 5px;
+	transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
+}
+
+.project-social > a:hover {
+	color: #94c058;
+	transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
+}
