@@ -15,4 +15,6 @@ logo: /static/img/lines/exafpga/logo.png
 ---
 show_subnav: yes
 ---
-affiliation_tag: dreams
+affiliation: dreams
+---
+affiliation_tag: a4ds

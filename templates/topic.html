@@ -1,14 +1,16 @@
 {% extends "layout.html" %}
 {% from "macros/small_biocard.html" import render_biocard_small %}
 {% from "macros/attachment.html" import render_attachment %}
+{% from "macros/project.html" import render_project %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block additional_css %}
 <!-- <link rel="stylesheet" href="{{ '/static/css/featurette.css'|url }}"> -->
 <link rel="stylesheet" href="{{ '/static/css/contact_card_small.css'|url }}">
+<link rel="stylesheet" href="{{ '/static/css/project.css'|url }}">
 {% endblock %}
 
 {% block body %}
-{% set people = site.get('/people').children.filter(F.affiliation.contains(this.affiliation_tag)) %}
+{% set projects = site.get('/projects').children.filter(F.topic_affiliation.contains(this.affiliation_tag)) %}
 
 <div class="main-container">
   {% set carousel_data = bag(this.title|lower).carousel %}
@@ -44,8 +46,9 @@
           <ul class="menu">
             {% if this.project_title or this.project_desc %}<li><a href="#description">About</a></li>{% endif %}
             {% if bag(this.title|lower).features %}<li><a href="#features">Features</a></li>{% endif %}
-            {% if people %}<li><a href="#people">People</a></li>{% endif %}
+            {% if projects %}<li><a href="#projects">Projects</a></li>{% endif %}
             {% if this.attachments %}<li><a href="#material">Downloads</a></li>{% endif %}
+            {% if this.facebook %}<li><a href="{{ this.facebook }}" target="_blank">Facebook</a></li>{% endif %}
             {% for item in bag(this.title|lower).additional_sections %}
             <li><a href="{{item.url if item.external_url else item.url|url}}">{{ item.text }}</a></li>
             {% endfor %}
@@ -56,10 +59,10 @@
   </div>
   {% endif %}
 
-  {% if this.project_title or this.project_desc %}
+  {% if this.title or this.project_desc %}
   <div class="container" id="description">
-    {% if this.project_title %}
-  	<div class="page-header"><h1>{{ this.project_title }}</h1></div>
+    {% if this.title %}
+  	<div class="page-header"><h1>{{ this.title }}</h1></div>
     {% endif %}
     {% if this.project_desc %}
   	<p>{{ this.project_desc }}</p>
@@ -101,29 +104,14 @@
     {% endfor %}
   {% endif %}
 
-  {% if this.attachments %}
-  <div class="container" id="material">
-    <div class="page-header"><h1>Material</h1></div>
-      <ul class="attachment-list">
-        {% for a in this.attachments %}
-        {{ render_attachment(a) }}
-        {% endfor %}
-      </ul>
-    <hr class="featurette-divider">
+  {% if projects %}
+  <div class="container" id="projects">
+    <div class="page-header"><h1>Projects</h1></div>
+    {% for p in projects %}
+    {{ render_project(p) }}
+    {% endfor %}
   </div>
-  {% endif %}
-
-  {% if people %}
-  <div class="container" id="people">
-    <div class="page-header"><h1>People</h1></div>
-    <div class="row">
-      {% for p in people %}
-      {{ render_biocard_small(p) }}
-      {% endfor %}
-    </div>
-    <hr class="featurette-divider">
-  </div>
-  {% endif %}
+  {% endif %}  
 </div>
 
 {% endblock %}

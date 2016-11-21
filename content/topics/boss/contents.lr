@@ -15,4 +15,6 @@ logo: /static/img/lines/exafpga/logo.png
 ---
 show_subnav: yes
 ---
-affiliation_tag: ribs
+affiliation: ribs
+---
+affiliation_tag: boss
