@@ -4,6 +4,32 @@
 <link rel="stylesheet" href="{{ '/static/css/research-lines.css'|url }}">
 {% endblock %}
 {% block body %}
+<div class="main-container">
+  <div class="main-container">
+  <section class="cover image-slider slider-all-controls controls-inside landing-slider parallax">
+    <ul class="slides">
+        {% for item in bag('line_carousel').carousel %}
+        <li class="overlay image-bg">
+            <div class="background-image-holder">
+                <img alt="image" class="background-image" src="{{ item.image|url }}">
+            </div>
+            {% if item.caption or item.title or item.subtitle or item.link %}
+            <div class="container v-align-transform">
+                <div class="row">
+                    <div class="col-md-6 col-sm-8">
+                        {% if item.title %}<h1 class="mb40 mb-xs-16 large">{{ item.title }}</h1>{% endif %}
+                        {% if item.subtitle %}<h6 class="uppercase mb16">{{ item.subtitle }}</h6>{% endif %}
+                        {% if item.caption %}<p class="lead mb40">{{ item.caption }}</p>{% endif %}
+                        {% if item.link %}<a class="btn btn-lg" href="{{ item.link if item.external_link else item.link|url }}">{{ item.link_name }}</a>{% endif %}
+                    </div>
+                </div>
+            </div>
+            {% endif %}
+        </li>
+        {% endfor %}
+    </ul>
+  </section>
+</div> 
 <div class="main-container research-lines-list">
   <div class="row row-eq-height center">
     {% for line in this.children %}
@@ -13,7 +39,7 @@
           <div class="img-holder">
             <img class="img-circle" src="{{ line.logo|url }}">
           </div>
-          <h2>{{ line.parent_title }}</h2>
+          <!-- <h2>{{ line.parent_title }}</h2> -->
           <p>{{ line.parent_description }}</p>
         </div>
       </a>

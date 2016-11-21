@@ -37,8 +37,9 @@ a:hover .research-line {
 }
 
 .research-line .img-circle {
-	height: 150px;
-	width: 150px;
+	max-height: 150px;
+	// width: 150px;
+	border-radius: 0px;
 }
 
 .research-line h2 {

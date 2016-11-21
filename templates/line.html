@@ -57,52 +57,52 @@
   </div>
   {% endif %}
 
-  {% if this.project_title or this.project_desc %}
+  {% if this.title or this.project_desc %}
   <div class="container" id="description">
-    {% if this.project_title %}
-    <div class="page-header"><h1>{{ this.project_title }}</h1></div>
+    {% if this.title %}
+    <div class="page-header"><h1>{{ this.title }}</h1></div>
     {% endif %}
     {% if this.project_desc %}
-    <p>{{ this.project_desc }}</p>
+    <p class="text-justify">{{ this.project_desc }}</p>
     {% endif %}
     <hr class="featurette-divider">
   </div>
   {% endif %}
 
-  {% set feature_data = bag(this.title|lower).features %}
+  {% set feature_data = site.get('/topics').children.filter(F.affiliation.contains(this.affiliation_tag)) %}
   {% if feature_data %}
     {% for feat in feature_data %}
     {% if loop.index % 2 != 0 %}
     <section class="image-square right">
         <div class="col-md-6 image">
             <div class="background-image-holder">
-                <img alt="image" class="background-image" src="{{ feat.image|url }}">
+                <img alt="image" class="background-image" src="http://placehold.it/50x50">
             </div>
         </div>
         <div class="col-md-6 content">
-            <h2>{{ feat.title }}</h2>
-            <h3>{{ feat.subtitle }}</h3>
-            <p class="mb0">{{ feat.text }}</p>
+            <h2><a href="{{ feat|url }}">{{ feat.parent_title }}</a></h2>
+            <h3>{{ feat.parent_subtitle }}</h3>
+            <p class="mb0">{{ feat.parent_description }}</p>
         </div>
     </section>
     {% else %}
     <section class="image-square left">
         <div class="col-md-6 image">
             <div class="background-image-holder">
-                <img alt="image" class="background-image" src="{{ feat.image|url }}">
+                <img alt="image" class="background-image" src="http://placehold.it/50x50">
             </div>
         </div>
         <div class="col-md-6 col-md-offset-1 content">
-            <h2>{{ feat.title }}</h2>
-            <h3>{{ feat.subtitle }}</h3>
-            <p class="mb0">{{ feat.text }}</p>
+            <h2><a href="{{ feat|url }}">{{ feat.parent_title }}</a></h2>
+            <h3>{{ feat.parent_subtitle }}</h3>
+            <p class="mb0">{{ feat.parent_description }}</p>
         </div>
     </section>
     {% endif %}
     {% endfor %}
   {% endif %}
 
-  {% if this.attachments %}
+  <!-- {% if this.attachments %}
   <div class="container" id="material">
     <div class="page-header"><h1>Material</h1></div>
       <ul class="attachment-list">
@@ -112,7 +112,7 @@
       </ul>
     <hr class="featurette-divider">
   </div>
-  {% endif %}
+  {% endif %} -->
 
   {% if people %}
   <div class="container" id="people">
