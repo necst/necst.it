@@ -23,8 +23,8 @@
 {% endmacro %}
 <div class="main-container">
 {{ render_biolist('Professors', this.children.filter(F.category == 'professor'), False)}}
-{{ render_biolist('Staff', this.children.filter(F.category == 'staff'), True)}}
 {{ render_biolist('Visiting', this.children.filter(F.category == 'visiting'), False)}}
+{{ render_biolist('NECST Mate', this.children.filter(F.category == 'affiliate'), False)}}
 {{ render_biolist('Ph.D. Students', this.children.filter(F.category == 'phd'), False)}}
 {{ render_biolist('Students', this.children.filter(F.category == 'student'), True)}}
 {{ render_biolist('Alumni', this.children.filter(F.category == 'alumnus'), True)}}

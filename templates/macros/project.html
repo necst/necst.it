@@ -1,0 +1,12 @@
+{% macro render_project(data) %}
+<div>
+<a href="{{ data|url }}"><h2>{{ data.title }}</h2></a>
+<div class="project-social">
+  {% if data.facebook %}<a href="{{ data.facebook }}" target="_blank"><span class="fa fa-facebook-square"></span></a>{% endif %}
+  {% if data.twitter %}<a href="{{ data.twitter }}" target="_blank"><span class="fa fa-twitter-square"></span></a>{% endif %}
+  {% if data.youtube %}<a href="{{ data.youtube }}" target="_blank"><span class="fa fa-youtube-square"></span></a>{% endif %}
+</div>
+<p>{{ data.description }}</p>
+</div>
+<hr>
+{% endmacro %}

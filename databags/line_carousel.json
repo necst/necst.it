@@ -1,0 +1,31 @@
+{
+	"carousel": [
+		{
+			"image": "/static/img/landing/DReAMS2.jpg",
+			"title": "DReAMS",
+			"subtitle": "NECST Research Line focusing on Reconfigurable Computing",
+			"caption": "",
+			"link": "/lines/dreams",
+			"link_name": "Details",
+			"external_link": false
+		},
+		{
+			"image": "/static/img/landing/ORCA.jpg",
+			"title": "ORCA",
+			"subtitle": "Observe, Runtime & Computer Architecture",
+			"caption": "",
+			"link": "/lines/orca",
+			"link_name": "Details",
+			"external_link": false
+		},
+		{
+			"image": "/static/img/landing/RIBS2.jpg",
+			"title": "RIBs",
+			"subtitle": "Real Interactive Building Experiences",
+			"caption": "",
+			"link": "/lines/ribs",
+			"link_name": "Details",
+			"external_link": false
+		}
+	]
+}
