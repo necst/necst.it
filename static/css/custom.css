@@ -11,6 +11,24 @@ footer > p.text-right {
 	margin-right: 20px;
 }
 
+footer .footer-social {
+	color: black;
+	font-size: 20px;
+	transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
+}
+
+footer .footer-social:hover {
+	color: #94c058;
+	font-size: 20px;
+	transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
+}
+
 .landing-slider .slides li {
 	height: 500px;
 }
