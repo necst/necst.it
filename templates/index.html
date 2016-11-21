@@ -53,7 +53,7 @@
       <div class="container">
           <div class="row">
               <div class="col-sm-4">
-                  <h2 class="number">NEWS</h2>
+                  <h2 class="number text-center">NEWS</h2>
                   {% for news in bag('news').news %}
                   {% if loop.index <= 5 %}
                     {{ render_news(news.date, news.text) }}
@@ -61,13 +61,14 @@
                   {% endfor %}
               </div>
               <div class="col-sm-4">
-                  <h2 class="number">FIND US</h2>
-                  <p>
-                      <img src="{{ 'static/img/landing/map.png'|url }}">
-                  </p>
+                  <h2 class="number text-center">FIND US</h2>
+                  <p><img src="{{ 'static/img/landing/map.png'|url }}"></p>
+                  <h5>Marco D. Santambrogio<br>
+                  <span class="fa fa-phone"></span> 02-23993564<br>
+                  <span class="fa fa-envelope"></span> <a href="mailto:marco.santambrogio@polimi.it">marco.santambrogio@polimi.it</a></h5>
               </div>
               <div class="col-sm-4">
-                  <h2>UPCOMING EVENTS</h2>
+                  <h2 class="number text-center">UPCOMING EVENTS</h2>
                   <div class="calendar-container" id="agenda"></div>
                   <p class="calendar-link"><a href="{{ site.get('calendar')|url }}">See full calendar</a></p>
               </div>
