@@ -1,8 +1,10 @@
 {% extends "layout.html" %}
 {% from "macros/attachment.html" import render_attachment %}
+{% from "macros/research_line_small.html" import render_line_small %}
 {% block title %}{{ this.title }}{% endblock %}
 {% block additional_css %}
 <link rel="stylesheet" href="{{ '/static/css/profile.css'|url }}">
+<link rel="stylesheet" href="{{ '/static/css/research-lines.css'|url }}">
 {% endblock %}
 
 {% block body %}
@@ -29,7 +31,14 @@
       <h1>{{ this.first_name }} {{ this.last_name }}</h1>
       <h4>- {{ this.role }} -</h4>
       <hr>
-      {{ this.bio }}
+      <h3>Working On</h3>
+      {% set lines = site.get('/lines').children %}
+      {% for l in lines %}
+      {% if l.affiliation_tag in this.affiliation %}
+      {{ render_line_small(l) }}
+      {% endif %}
+      {% endfor %}
+
     </div>
   </div>
 </div>

@@ -1,0 +1,8 @@
+{% macro render_line_small(data) %}
+<div class="research-line-small">
+	<a href="{{ data|url }}">
+		<img src="{{ data.logo|url }}">
+		<!-- <h4>{{ data.title }}</h4> -->
+	</a>
+</div>
+{% endmacro %}

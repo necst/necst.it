@@ -10,14 +10,17 @@
 }
 
 .social-profiles a {
-	font-family: Calibri;
-	font-size: 15px;
-	color: #575858FF;
+	font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
+	text-transform: uppercase;
+	font-size: 12px;
+	color: #575858;
+	-webkit-font-smoothing: antialiased;
+	letter-spacing: 1px;
 }
 
 .social-profiles a:hover {
 	text-decoration: none;
-	color: rgb(140, 163, 112);
+	color: #94c058;
 }
 
 .social-profiles span:before {
