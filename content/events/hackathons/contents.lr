@@ -25,3 +25,5 @@ proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
 logo: /static/img/lines/ribs/logo.png
 ---
 show_subnav: no
+---
+external_url: http://xph.necst.it

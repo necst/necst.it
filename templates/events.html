@@ -7,7 +7,7 @@
 <div class="main-container topics-list">
   <div class="row">
     {% for event in this.children %}
-    <a href="{{ event|url }}">
+    <a href="{% if event.external_url %}{{ event.external_url }}{% else %}{{ event|url }}{% endif %}" {% if event.external_url %}target="_blank"{% endif %}>
       <div class="col-md-12">
         <div class="topic">
           <div class="row">
