@@ -1,4 +1,21 @@
 {% macro render_attachment(data) %}
 
-<li><a href="{{ data|url }}"><span class="fa {% if data.type == 'PPT' %}fa-file-powerpoint-o{% elif data.type == 'PDF' %}fa-file-pdf-o{% else %}fa-file-text-o{%  endif %}"></span>{{ data.name }} ({{ data.description }})</a></li>
+<li>
+	<a href="{{ data|url }}">
+		{% if data.type == 'PDF' %}
+			<span class="fa fa-file-pdf-o"></span>
+			<div>
+				<span class="title">{{ data.title }}</span>
+				<br>
+				{{ data. authors }}
+				<br>
+				<span class="venue">{{ data.venue }}</span>
+			</div>
+		{% else %}
+			<span class="fa {% if data.type == 'PPT' %}fa-file-powerpoint-o{% else %}fa-file-text-o{%  endif %}"></span>
+			{{ data.name }}
+			({{ data.description }})
+		{% endif %}
+	</a>
+</li>
 {% endmacro %}

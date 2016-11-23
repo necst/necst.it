@@ -45,7 +45,7 @@
           <ul class="menu">
             {% if this.project_title or this.project_desc %}<li><a href="#description">About</a></li>{% endif %}
             {% if bag(this.title|lower).features %}<li><a href="#features">Features</a></li>{% endif %}
-            {% if people %}<li><a href="#people">People</a></li>{% endif %}
+            <!-- {% if people %}<li><a href="#people">People</a></li>{% endif %} -->
             {% if this.attachments %}<li><a href="#material">Downloads</a></li>{% endif %}
             {% for item in bag(this.title|lower).additional_sections %}
             <li><a href="{{item.url if item.external_url else item.url|url}}">{{ item.text }}</a></li>
@@ -102,19 +102,7 @@
     {% endfor %}
   {% endif %}
 
-  <!-- {% if this.attachments %}
-  <div class="container" id="material">
-    <div class="page-header"><h1>Material</h1></div>
-      <ul class="attachment-list">
-        {% for a in this.attachments %}
-        {{ render_attachment(a) }}
-        {% endfor %}
-      </ul>
-    <hr class="featurette-divider">
-  </div>
-  {% endif %} -->
-
-  {% if people %}
+  <!-- {% if people %}
   <div class="container" id="people">
     <div class="page-header"><h1>People</h1></div>
     <div class="row">
@@ -124,7 +112,7 @@
     </div>
     <hr class="featurette-divider">
   </div>
-  {% endif %}
+  {% endif %} -->
 </div>
 
 {% endblock %}

@@ -1,0 +1,45 @@
+{% extends "layout.html" %}
+{% from "macros/attachment.html" import render_attachment %}
+{% block title %}{{ this.title }}{% endblock %}
+{% block additional_css %}
+<link rel="stylesheet" href="{{ '/static/css/profile.css'|url }}">
+<link rel="stylesheet" href="{{ '/static/css/attachment.css'|url }}">
+{% endblock %}
+
+{% block body %}
+<div class="container profile">
+  <div class="row">
+    <div class="col-md-3">
+      <div class="row">
+        <div class="col-md-12">
+          <img src="{{ this.logo }}"/>
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-md-12 social-profiles">
+          {% if this.facebook %}<p><a href="{{ this.facebook }}" target="_blank"><span class="fa fa-facebook-square">Facebook</span></a></p>{% endif %}
+          {% if this.twitter %}<p><a href="{{ this.twitter }}" target="_blank"><span class="fa fa-twitter-square">Twitter</span></a></p>{% endif %}
+          {% if this.youtube %}<p><a href="{{ this.youtube }}" target="_blank"><span class="fa fa-youtube-square">YouTube</span></a></p>{% endif %}
+          {% if this.slideshare %}<p><a href="{{ this.slideshare }}" target="_blank"><span class="fa fa-slideshare">SlideShare</span></a></p>{% endif %}
+        </div>
+      </div>
+    </div>
+    <div class="col-md-9">
+      <h1>{{ this.title }}</h1>
+      <h4>- Boh -</h4>
+      <hr>
+      {{ this.description }}
+      <hr>
+      <h3>Downloads</h3>
+        {% if this.attachments %}
+        <ul class="attachment-list">
+          {% for a in this.attachments %}
+          {{ render_attachment(a) }}
+          {% endfor %}
+        </ul>
+        <hr>
+        {% endif %}
+    </div>
+  </div>
+</div>
+{% endblock %}

@@ -1,0 +1,33 @@
+ul.attachment-list > li span.fa {
+	font-size: 30px;
+	margin-right: 10px;
+	display: inline-block;
+}
+
+ul.attachment-list > li > a {
+	color: #666;
+}
+
+ul.attachment-list > li > a > div {
+	display: inline-block;
+}
+
+ul.attachment-list > li > a > div > span.title {
+	font-size: 20px;
+}
+
+ul.attachment-list > li > a > div > span.venue {
+	color: #aaa;
+	transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
+}
+
+ul.attachment-list > li > a:hover, ul.attachment-list > li > a:hover > div > span.venue {
+	color: #94c058;
+	transition: color 0.2s;
+	-moz-transition: color 0.2s;
+	-webkit-transition: color 0.2s;
+	-o-transition: color 0.2s;
+}
