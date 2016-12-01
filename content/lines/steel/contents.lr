@@ -1,0 +1,19 @@
+title: STeEL
+---
+parent_title: STeEL
+---
+parent_description:
+**STeEL** is the NECST Research Line focusing on smart ambients design and personal comfort monitoring systems to ease buildings management and users experience.  
+The **STeEL** nature is two fold: augmenting environments to enhance users perceived comfort and wellness and improving and leveraging existing building managements.
+---
+logo: /static/img/lines/steel/logo.png
+---
+show_subnav: no
+---
+affiliation_tag: steel
+---
+project_desc:
+STeEL is the NECST Research Line focusing on smart ambients design and personal comfort monitoring systems to ease buildings management and users experience.
+The STeEL nature is two fold: augmenting environments to enhance users perceived comfort and wellness and improving and leveraging existing building managements.  
+STeEL will achieve its objectives, among the other, by adapting CAD tools/design algorithms for processors thermal management and runtime load distributions, by investigating how to place sensors for designing smart environments via physical design PaR and floorplanning algorithms, and by realizing and deploying reconfigurable embedded systems for processing and integrating multiple monitoring sources.  
+STeEL by monitoring its tenants behaviors, will be able to adapt autonomously to their habits enhancing their comfort and experience.

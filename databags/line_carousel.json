@@ -19,11 +19,11 @@
 			"external_link": false
 		},
 		{
-			"image": "/static/img/landing/RIBS2.jpg",
-			"title": "RIBs",
-			"subtitle": "Real Interactive Building Experiences",
-			"caption": "",
-			"link": "/lines/ribs",
+			"image": "/static/img/landing/RIBS.jpg",
+			"title": "STeEL",
+			"subtitle": "Smart Technologies, Easy Life",
+			"caption": "Comfort-based smart systems and environments designed to ease building management and user experience",
+			"link": "/lines/steel",
 			"link_name": "Details",
 			"external_link": false
 		}

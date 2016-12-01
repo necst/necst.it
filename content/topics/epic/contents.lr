@@ -1,20 +1,21 @@
-title: EPiC
+title: EPiC (Emotional and Physical Comfort)
 ---
 parent_title: EPiC
 ---
 parent_description:
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**EPiC** is a STeEL Research Line topic focusing on models identification and design capable of recognizing and classifying human emotions.
+EPiC vision is to exploit emotional patterns to directly influence individual emotional status. Based on the SPIn research topic results, EPiC will meet its objectives by adapting the surrounding environment, e.g. varying light color and intensity, lowering/increasing temperature, etc.
 ---
 logo: /static/img/lines/exafpga/logo.png
 ---
 show_subnav: yes
 ---
-affiliation: ribs
+affiliation: steel
 ---
 affiliation_tag: epic
+---
+facebook: http://google.it
+---
+project_desc:
+EPiC is a STeEL Research Line topic focusing on models identification and design capable of recognizing and classifying human emotions.
+EPiC vision is to exploit emotional patterns to directly influence individual emotional status. Based on the SPIn research topic results, EPiC will meet its objectives by adapting the surrounding environment, e.g. varying light color and intensity, lowering/increasing temperature, etc.
