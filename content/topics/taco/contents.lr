@@ -1,15 +1,10 @@
-title: TACO
+title: TACO (Thermal Awareness and Control)
 ---
 parent_title: TACO
 ---
 parent_description:
-
-Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
+**TACo** is a STeEL Research Line Topic focusing on designing adaptive models able to process personal and environmental thermal data acting on building appliances.
+TACo aims at improving personal comfort, leveraging on the thermal features of the building, e.g. HVAC systems, lighting systems, automatic window shutters, etc. TACo objectives will be met by creating adaptive models based on information provided by the SPIn RL Topic monitoring infrastructure. Decisions computed by these models will be put into action to improve personal thermal comfort without negatively impacting on the energy cost.
 ---
 logo: /static/img/lines/exafpga/logo.png
 ---
@@ -18,3 +13,11 @@ show_subnav: yes
 affiliation: steel
 ---
 affiliation_tag: taco
+---
+facebook: http://google.it
+---
+project_desc:
+TACo is a STeEL Research Line Topic focusing on designing adaptive models able to process personal and environmental thermal data acting on building appliances.
+TACo aims at improving personal comfort, leveraging on the thermal features of the building, e.g. HVAC systems, lighting systems, automatic window shutters, etc. TACo objectives will be met by creating adaptive models based on information provided by the SPIn RL Topic monitoring infrastructure. Decisions computed by these models will be put into action to improve personal thermal comfort without negatively impacting on the energy cost.
+---
+slogan: An energy-wise, user-centered approach to improve thermal control
