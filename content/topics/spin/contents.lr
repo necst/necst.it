@@ -3,7 +3,9 @@ title: SPIn (Sensor Pervasive Infrastructure)
 parent_title: SPIn
 ---
 parent_description:
-
+**SPIn** is a STeEL Research Line Topic focusing on designing the pervasive sensors’ data retrieval monitoring infrastructure.
+SPIn monitors will be used to provide and expose status information of the monitored subject to other STeEL RL Topics, e.g. biometrical information to EPiC, temperature data to TACo, etc.
+SPIn implements pervasive sensor networks combining CAD tools and IoT techniques. This will guarantee data sensor fusion from heterogeneous sources and communication protocols, providing computing capabilities at the edge gateways, e.g fog computing.
 ---
 logo: /static/img/lines/exafpga/logo.png
 ---
@@ -15,5 +17,10 @@ affiliation_tag: spin
 ---
 facebook: http://google.it
 ---
+slogan: Environment and human monitoring infrastructures
+---
 project_desc:
+SPIn is a STeEL Research Line Topic focusing on designing the pervasive sensors’ data retrieval monitoring infrastructure.
+SPIn monitors will be used to provide and expose status information of the monitored subject to other STeEL RL Topics, e.g. biometrical information to EPiC, temperature data to TACo, etc.
+SPIn implements pervasive sensor networks combining CAD tools and IoT techniques. This will guarantee data sensor fusion from heterogeneous sources and communication protocols, providing computing capabilities at the edge gateways, e.g fog computing.
 
