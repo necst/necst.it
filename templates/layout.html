@@ -47,7 +47,7 @@
               <a href="/topics">Topics</a>
               <ul>
                 {% for topic in site.get('/topics').children %}
-                <li><a href="{{ topic|url }}">{{ topic.title }}</a></li>
+                <li><a href="{{ topic|url }}">{{ topic.parent_title }}</a></li>
                 {% endfor %}
               </ul>
             </li>
