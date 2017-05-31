@@ -12,7 +12,7 @@
 
 {% block body %}    
 <div class="main-container">
-  <section class="cover image-slider slider-all-controls controls-inside landing-slider parallax">
+  <!-- <section class="cover image-slider slider-all-controls controls-inside landing-slider parallax">
     <ul class="slides">
         {% for item in bag('landing_carousel').carousel %}
         <li class="overlay image-bg">
@@ -33,7 +33,7 @@
             {% endif %}
         </li>
         {% endfor %}
-    </ul>
+    </ul> -->
   </section>
   <section>
       <div class="container">
@@ -53,19 +53,20 @@
       <div class="container">
           <div class="row">
               <div class="col-sm-4">
-                  <h2 class="number text-center">NEWS</h2>
+                  <!-- <h2 class="number text-center">NEWS</h2>
                   {% for news in bag('news').news %}
                   {% if loop.index <= 5 %}
                     {{ render_news(news.date, news.text) }}
                   {% endif %}
-                  {% endfor %}
+                  {% endfor %} -->
+                  <a class="twitter-timeline" data-height="400" data-theme="dark" data-link-color="#47b475" href="https://twitter.com/necstlaboratory">Tweets by necstlaboratory</a> <script async src="//platform.twitter.com/widgets.js" charset="utf-8"></script>
               </div>
               <div class="col-sm-4">
                   <h2 class="number text-center">FIND US</h2>
                   <p><img src="{{ 'static/img/landing/map.png'|url }}"></p>
                   <h5>Marco D. Santambrogio<br>
                   <span class="fa fa-phone"></span> 02-23993564<br>
-                  <span class="fa fa-envelope"></span> <a href="mailto:marco.santambrogio@polimi.it">marco.santambrogio@polimi.it</a></h5>
+                  <span class="fa fa-envelope"></span> marco DOT santambrogio AT polimi DOT it</h5>
               </div>
               <div class="col-sm-4">
                   <h2 class="number text-center">UPCOMING EVENTS</h2>
